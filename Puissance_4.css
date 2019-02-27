@@ -1,0 +1,165 @@
+﻿*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'sayans', serif , sans-serif;
+    font-size: 30px;
+}
+html { 
+    background: url(back.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+@font-face
+{
+    font-family: sayans;
+    src: url(Saiyan-Sans.ttf);
+}
+
+.jeu
+{
+    margin-top: 100px;
+}
+.col
+{
+    position: relative;
+    margin: 0.5%;
+}
+.navbar
+{
+    height: 60px;
+    overflow: hidden;
+    background-color: rgba(21, 21, 19, 0.68);
+    position: fixed;
+    top: -0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border: solid 2px white;
+}
+.rejouer
+{
+    width: 100px;
+    height: 50px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+}
+.plateau_de_jeu
+{
+    padding: 2%;
+    margin-top: 40px;
+    width: auto;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+.item
+{
+    margin-top: 1%;
+    height: 110px;
+    width: 110px;
+    border: 1px solid #12123b;
+    border-radius: 50% 50% 50% ;
+    
+}
+.empty
+{
+    background-color: rgba(194, 211, 217, 0.75);
+}
+.joueur1
+{
+     background-color: yellow;
+     animation: fall 0.6s ease 1 alternate;
+     padding: 40px;
+}
+.joueur2
+{
+     background-color: red;
+     animation: fall 0.6s ease 1 alternate;
+     padding: 40px;
+}
+.score_j1
+{
+    width: 100px;
+    height: 40px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    margin-left: 45px;
+}
+.score_j2
+{
+    width: 100px;
+    height: 40px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    margin-left: 45px;
+}
+.undo
+{
+    width: 80px;
+    height: 40px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    margin-left: 45px;
+}
+.tour
+{
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+.mute
+{
+    width: 80px;
+    height: 40px;
+    border: solid 2px white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    margin-left: 45px;
+}
+
+@keyframes fall{
+    from{
+        top:0px;
+        position: relative;
+    }
+    75%{
+        left:300px;
+        top:30px;
+        position: relative;
+
+    }
+    50%{
+        right:300px;
+        top:100px;
+        position: relative;
+    }
+    30%{
+        left:500px;
+        top:50px;
+        position: relative;
+    }
+
+    15%{
+        right:250px;
+        top:50px;
+        position: relative;
+    }
+
+    to{
+        top:5px;
+        position: relative;
+    }
+}
